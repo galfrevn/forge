@@ -3,8 +3,6 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "dev:cli": "cd packages/cli && yarn dev",
-    "dev:docs": "cd apps/docs && yarn dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
