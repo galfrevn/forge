@@ -3,6 +3,8 @@ import colors from 'chalk';
 import { strip } from '@/components/prompt/utils/clear';
 
 export const textMain = (value: string) => colors.red(value);
+export const textInfo = (value: string) => colors.yellow(value);
+export const textSuccess = (value: string) => colors.hex('#7FFFD4')(value);
 
 export const textMuted = (value: string) => colors.dim(value);
 export const textBold = (value: string) => colors.bold(value);

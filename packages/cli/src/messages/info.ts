@@ -1,7 +1,7 @@
 import { log } from '@/utils/log';
 import { sleep } from '@/utils/sleep';
 
-import { textMain, textMuted } from '@/utils/text';
+import { textInfo, textMuted } from '@/utils/text';
 
 import spacingConfiguration from '@/configuration/spacing';
 
@@ -19,7 +19,7 @@ export const infoMessage = async ({
   leftSpacing = spacingConfiguration.leftSpacing,
 }: InformaticMessageParams) => {
   await sleep(100);
-  const informaticMessageLabel = `${' '.repeat(leftSpacing)} ${textMain('◼')} ${textMain(prefix)}`;
+  const informaticMessageLabel = `${' '.repeat(leftSpacing)} ${textInfo('◼')} ${textInfo(prefix)}`;
 
   if (stdout.columns < 80) {
     log(informaticMessageLabel);

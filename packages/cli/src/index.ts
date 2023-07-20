@@ -7,6 +7,9 @@ import { getContext } from '@/components/context';
 import { introduction } from '@/components/steps/introduction';
 import { information } from '@/components/steps/information';
 import { template } from '@/components/steps/template';
+import { dependencies } from '@/components/steps/dependencies';
+import { repository } from '@/components/steps/repository';
+import { success } from '@/components/steps/success';
 
 checkNodeVersion();
 
@@ -27,7 +30,7 @@ async function forgeCommandsInterface() {
 
   /* if (context.help) return help(); */
 
-  const steps = [introduction, information, template];
+  const steps = [introduction, information, template, dependencies, repository, success];
 
   for (const step of steps) {
     await step(context);
@@ -37,5 +40,3 @@ async function forgeCommandsInterface() {
 }
 
 forgeCommandsInterface();
-
-export { getContext, introduction };
