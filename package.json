@@ -3,6 +3,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "dev:cli": "cd packages/cli && yarn dev",
+    "dev:docs": "cd apps/docs && yarn dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
@@ -13,7 +15,7 @@
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
-  "name": "turbo",
+  "name": "forge",
   "packageManager": "yarn@1.22.19",
   "workspaces": [
     "apps/*",

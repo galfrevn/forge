@@ -1,10 +1,9 @@
-import { Button, Header } from "ui";
 
 export default function Page() {
   return (
     <>
-      <Header text="Docs" />
-      <Button />
+      <div />
+      <h1 >HELLO 2</h1>
     </>
   );
 }
