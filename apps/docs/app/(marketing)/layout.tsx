@@ -1,7 +1,5 @@
 import Link from 'next/link';
 
-import { marketingConfiguration } from 'configuration/marketing';
-
 import { cn } from 'lib/tailwind';
 import { buttonVariants } from 'components/ui/button';
 

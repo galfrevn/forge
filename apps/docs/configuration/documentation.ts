@@ -29,30 +29,25 @@ export const documentationConfiguration: DocumentationConfiguration = {
           href: '/docs/documentation',
         },
         {
-          title: 'Contentlayer',
-          href: '/docs/in-progress',
-          disabled: true,
+          title: 'Installation',
+          href: '/docs/documentation/installation',
         },
         {
-          title: 'Components',
-          href: '/docs/documentation/components',
+          title: 'Usage',
+          href: '/docs/documentation/usage',
         },
         {
-          title: 'Code Blocks',
-          href: '/docs/documentation/code-blocks',
+          title: 'Commands',
+          href: '/docs/documentation/commands',
         },
-        {
-          title: 'Style Guide',
-          href: '/docs/documentation/style-guide',
-        },
-        {
+        /* {
           title: 'Search',
           href: '/docs/in-progress',
           disabled: true,
-        },
+        }, */
       ],
     },
-    {
+    /* {
       title: 'Blog',
       items: [
         {
@@ -131,6 +126,6 @@ export const documentationConfiguration: DocumentationConfiguration = {
           disabled: true,
         },
       ],
-    },
+    }, */
   ],
 };

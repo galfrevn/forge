@@ -1,0 +1,66 @@
+---
+title: Commands
+description: Advanced configuration for customizing your experience.
+---
+
+Forge offers a range of commands to facilitate project creation and management. Here are some of the most commonly used commands:
+
+- `forge create` Create a new project based on customizable templates.
+- `forge list` List available project templates.
+- `forge generate` Generate code snippets or files within an existing project.
+- `forge customize` Customize a project's configuration based on your preferences.
+
+<Callout>
+
+All these commands are not working yet. This section is still in progress.
+The only working command is `forge`.
+
+</Callout>
+
+# Options
+
+You can also use various options with Forge commands to tailor your projects further:
+
+- `--template <template-name>` Specify a template for project creation.
+- `--help>` Display help information for the CLI. Including all available commands and options.
+- `--install ` Force the dependencies of the project to be installed.
+- `--no-install` Skip the installation of dependencies.
+- `--git` Force the creation of a Git repository.
+- `--no-git` Skip the creation of a Git repository.
+- `--skip-blacksmith` Remove all the Blacksmith interactions.
+
+## Examples
+
+Create a project based on a Next.js template, install dependencies, and initialize a Git repository:
+
+```bash
+forge --template nextjs --install --git
+```
+
+Create a project based on a Astro.js template, skip the installation of dependencies, and remove all the Blacksmith interactions:
+
+```bash
+forge --skip-blacksmith --template astro --no-install
+```
+
+### Next.js configuration
+
+This is a sample Next.js configuration file. This is here just to show the styling of a code block.
+
+```ts showLineNumbers title="next.config.js" {3} /appDir: true/
+import { withContentlayer } from 'next-contentlayer';
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ['avatars.githubusercontent.com'],
+  },
+  experimental: {
+    appDir: true,
+    serverComponentsExternalPackages: ['@prisma/client'],
+  },
+};
+
+export default withContentlayer(nextConfig);
+```
