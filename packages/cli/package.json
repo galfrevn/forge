@@ -1,8 +1,11 @@
 {
-  "name": "cli",
-  "version": "0.0.0",
-  "main": "index.js",
+  "name": "@galfrevn/forge",
+  "version": "1.0.3",
+  "main": "./dist/index.js",
   "license": "MIT",
+  "bin": {
+    "@galfrevn/forge": "./dist/index.js"
+  },
   "dependencies": {
     "chalk": "4.1.2",
     "execa": "5",
@@ -16,7 +19,8 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "dev": "ts-node -r tsconfig-paths/register src"
+    "dev": "ts-node -r tsconfig-paths/register src",
+    "build": "npm run clean && tsc"
   },
   "devDependencies": {
     "@types/node": "^20.4.2",
