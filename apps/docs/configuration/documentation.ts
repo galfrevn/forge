@@ -7,8 +7,8 @@ export const documentationConfiguration: DocumentationConfiguration = {
       href: '/docs',
     },
     {
-      title: 'Guides',
-      href: '/guides',
+      title: 'Templates',
+      href: '/templates',
     },
   ],
   sidebarNav: [

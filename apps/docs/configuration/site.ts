@@ -1,11 +1,9 @@
 export const siteConfiguration = {
   name: 'Forge',
-  description:
-    'An open source application built using the new router, server components and everything new in Next.js 13.',
-  url: 'https://tx.shadcn.com',
-  ogImage: 'https://tx.shadcn.com/og.jpg',
+  description: 'Welcome to Forge, the ultimate open-source CLI journey where your coding dreams come alive with a single command. Empower your projects with the fusion of modern coding prowess and the artistry of seamless crafting.',
+  url: 'https://forge.galfrevn.com',
+  themeColor: '#09090B',
   links: {
-    twitter: 'https://twitter.com/shadcn',
-    github: 'https://github.com/shadcn/taxonomy',
+    github: 'https://github.com/galfrevn/forge',
   },
 };
