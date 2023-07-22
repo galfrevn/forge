@@ -1,12 +1,12 @@
 {
   "name": "@galfrevn/forge",
-  "version": "1.0.3",
-  "main": "./dist/index.js",
+  "version": "1.0.14",
   "license": "MIT",
-  "bin": {
-    "@galfrevn/forge": "./dist/index.js"
-  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": "dist/index.js",
   "dependencies": {
+    "arg": "^5.0.2",
     "chalk": "4.1.2",
     "execa": "5",
     "giget": "^1.1.2",
@@ -20,13 +20,16 @@
   "scripts": {
     "clean": "rm -rf dist",
     "dev": "ts-node -r tsconfig-paths/register src",
-    "build": "npm run clean && tsc"
+    "build": "npm run clean && tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "@types/node": "^20.4.2",
     "@types/which-pm-runs": "^1.0.0",
     "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.7",
     "tsconfig": "*",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.1.6"
   }
 }

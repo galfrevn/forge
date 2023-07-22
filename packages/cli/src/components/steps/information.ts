@@ -45,9 +45,7 @@ export const information = async (context: InformationStepParams) => {
 
     context.currentWorkingDirectory = name!;
     context.projectName = toValidName(name!);
-
   } else {
-    
     let name = context.currentWorkingDirectory;
     if (name === '.' || name === './') {
       const parts = process.cwd().split(path.sep);

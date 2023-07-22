@@ -10,6 +10,7 @@ import { template } from '@/components/steps/template';
 import { dependencies } from '@/components/steps/dependencies';
 import { repository } from '@/components/steps/repository';
 import { success } from '@/components/steps/success';
+import { help } from '@/components/steps/help';
 
 checkNodeVersion();
 
@@ -26,9 +27,9 @@ async function forgeCommandsInterface() {
   // broke our arg parser, since `--` is a special kind of flag. Filtering for `--` here
   // fixes the issue so that forge now works on all npm versions.
   const requestedArguments = process.argv.slice(2).filter((arg) => arg !== '--');
-  const context = await getContext(requestedArguments);
+  const context = await getContext(requestedArguments.filter((arg) => arg !== 'create'));
 
-  /* if (context.help) return help(); */
+  if (!requestedArguments.includes('create') || context.help) return help();
 
   const steps = [introduction, information, template, dependencies, repository, success];
 
