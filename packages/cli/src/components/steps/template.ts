@@ -29,6 +29,11 @@ export const template = async (context: TemplateStepParams) => {
           label: 'Fincast',
           hint: 'SST Monorepo (AWS Lambda + Serverless NextJS Site)',
         },
+        {
+          value: 'fcreator',
+          label: 'Filter Creator',
+          hint: 'Next.js Monorepo (Cognito, S3, SES, Snowflake, MUI)',
+        },
       ],
     });
     context.template = selectedTemplate;
