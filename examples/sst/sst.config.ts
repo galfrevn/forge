@@ -4,7 +4,7 @@ import { API } from "./stacks/MyStack";
 export default {
   config(_input) {
     return {
-      name: "fincast",
+      name: "forge",
       region: "us-east-1",
     };
   },

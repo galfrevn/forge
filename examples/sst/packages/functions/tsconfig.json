@@ -5,7 +5,7 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "@fincast/core/*": ["../core/src/*"]
+      "@forge/core/*": ["../core/src/*"]
     }
   }
 }

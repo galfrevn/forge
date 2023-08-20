@@ -22,11 +22,11 @@ export const template = async (context: TemplateStepParams) => {
       type: 'select',
       label: title('Template'),
       message: 'How would you like to start your new project?',
-      initial: 'fincast',
+      initial: 'sst',
       choices: [
         {
-          value: 'fincast',
-          label: 'Fincast',
+          value: 'sst',
+          label: 'Serverless Stack',
           hint: 'SST Monorepo (AWS Lambda + Serverless NextJS Site)',
         },
       ],
